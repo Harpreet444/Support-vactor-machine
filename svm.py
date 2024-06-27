@@ -12,7 +12,7 @@ data_set = load_digits()
 
 x_train, x_test, y_train, y_test = train_test_split(data_set.data,data_set.target,test_size=0.2,random_state=10)
 
-st.set_page_config(page_title="Digits detection",page_icon='1️⃣',layout='wide')
+st.set_page_config(page_title="Digits detection",page_icon='1️⃣',layout='centered')
 
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 

@@ -45,10 +45,10 @@ st.code('''x_train, x_test, y_train, y_test = train_test_split(data_set.data,dat
 
 k1 , k2 , k3 = st.columns(3)
 
-rbf = joblib.load('D:\\Machine_learning\\SVM\\rbf.job')
-linear = joblib.load('D:\\Machine_learning\\SVM\\linear.job')
-poly = joblib.load('D:\\Machine_learning\\SVM\\poly.job')
-model = joblib.load('D:\\Machine_learning\\SVM\\model.job')
+rbf = joblib.load('rbf.job')
+linear = joblib.load('linear.job')
+poly = joblib.load('poly.job')
+model = joblib.load('model.job')
 
 with k1:
     cm = confusion_matrix(y_test,rbf.predict(x_test))

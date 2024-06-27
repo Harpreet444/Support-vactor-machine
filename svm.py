@@ -12,11 +12,11 @@ data_set = load_digits()
 
 x_train, x_test, y_train, y_test = train_test_split(data_set.data,data_set.target,test_size=0.2,random_state=10)
 
-st.set_page_config(page_title="Digits detection",page_icon='1️⃣',layout='wide')
+st.set_page_config(page_title="Digits classification",page_icon='1️⃣',layout='wide')
 
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
-st.markdown("<h1 style='text-align: center;'>Digits detection using SVM (Support Vector Machine)</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Digits classification using SVM (Support Vector Machine)</h1>", unsafe_allow_html=True)
 st.write("""Train SVM classifier using sklearn digits dataset (i.e. from sklearn.datasets import load_digits) and then,
 
 1) Measure accuracy of your model using different kernels such as rbf and linear.\n

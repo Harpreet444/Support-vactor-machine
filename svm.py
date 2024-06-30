@@ -84,5 +84,5 @@ with k3:
     k3.pyplot(fig)
 
 st.subheader("Tuning the model")
-st.write("SVM model with rbf kernel and gamma = 2 gives highest scores")
+st.write("SVM model with rbf kernel and C = 2 gives highest scores")
 st.code("Score :"+str(model.score(x_test,y_test)))
